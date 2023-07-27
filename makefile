@@ -5,3 +5,4 @@ fileserver: main.cpp ./fileserver/fileserver.cpp ./threadpool/threadpool.cpp ./e
 
 clean:
 	rm  -r main
+	
