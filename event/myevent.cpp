@@ -5,7 +5,6 @@ std::unordered_map<int, Request> EventBase::requestStatus;
 std::unordered_map<int, Response> EventBase::responseStatus;
 
 
-
 void AcceptConn::process(){
     // 接受连接
     clientAddrLen = sizeof(clientAddr);

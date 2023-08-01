@@ -49,8 +49,6 @@ public:
 
 };
 
-
-
 // 用于接受客户端连接的事件
 class AcceptConn : public EventBase{
 public:
@@ -81,8 +79,6 @@ private:
 
 };
 
-
-
 // 处理客户端发送的请求
 class HandleRecv : public EventBase{
 public:
@@ -94,8 +90,6 @@ public:
 private:
     int m_clientFd;   // 客户端套接字，从该客户端读取数据
     int m_epollFd;    // epoll 文件描述符，在需要重置事件或关闭连接时使用
-
-
 };
 
 // 处理向客户端发送数据
