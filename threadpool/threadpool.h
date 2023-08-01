@@ -19,7 +19,7 @@ public:
     // 初始化线程池、互斥访问时间队列的互斥量、表示队列中事件的信号量
     ThreadPool(int threadNum);
     ~ThreadPool();
-public:
+
     // 向事件队列中添加一个待处理的事件，线程池中的线程会循环处理其中的事件
     int appendEvent(EventBase* event, const std::string eventType);
 

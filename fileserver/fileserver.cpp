@@ -74,7 +74,7 @@ int WebServer::epollAddListenFd(){
         std::cout << outHead("error") << "添加监控 Listen 套接字失败" << std::endl;
         return -1;
     }
-    
+
     std::cout << outHead("info") << "epoll 中添加监听套接字成功" << std::endl;
     return 0;
 }    
@@ -120,6 +120,7 @@ int WebServer::addHandleSig(int signo){
             std::cout << outHead("error") << "SIGINT 指定信号处理函数失败" << std::endl;
             return -1;
         }
+
         // 处理 SIGTERM 信号
         struct sigaction actTERM;
         actTERM.sa_handler = setSigHandler;
@@ -130,6 +131,7 @@ int WebServer::addHandleSig(int signo){
             std::cout << outHead("error") << "SIGTERM 指定信号处理函数失败" << std::endl;
             return -1;
         }
+        
         // 处理 SIGALRM 信号
         struct sigaction actALRM;
         actALRM.sa_handler = setSigHandler;

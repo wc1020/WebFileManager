@@ -113,6 +113,7 @@ void ThreadPool::run(){
         std::cout << outHead("info") << "线程 " << threadN << " 开始处理事件" << std::endl;
         curEvent->process();
         std::cout << outHead("info") << "线程 " << threadN << " 处理事件完成" << std::endl;
+        
         // 事件执行完需要销毁
         delete curEvent;
     }

@@ -1,6 +1,6 @@
 #include "utils.h"
 
-// 以 "09:50:19.0619 2022-09-26 [logType]: " 格式返回当前的时间和输出类型，logType 指定输出的类型：
+// 以 "09:50:19.0619 2023-07-26 [logType]: " 格式返回当前的时间和输出类型，logType 指定输出的类型：
 // init  : 表示服务器的初始化过程
 // error : 表示服务器运行中的出错消息
 // info  : 表示程序的运行信息
@@ -91,7 +91,6 @@ int deleteWaitFd(int epollFd, int deleteFd){
 }
 
 // 设置文件描述符为非阻塞
-
 int setNonBlocking(int fd){
     int oldFlag = fcntl(fd, F_GETFL);
     int ret = fcntl(fd, F_GETFL, oldFlag | O_NONBLOCK);

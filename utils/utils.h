@@ -16,7 +16,6 @@
 // info  : 表示程序的运行信息
 std::string outHead(const std::string logType);
 
-
 // 向 epollfd 添加文件描述符，并指定监听事件。edgeTrigger：边缘触发，isOneshot：EPOLLONESHOT
 int addWaitFd(int epollFd, int newFd, bool edgeTrigger = false, bool isOneshot = false);
 

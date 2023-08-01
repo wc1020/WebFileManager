@@ -149,7 +149,6 @@ public:
     MSGBODYTYPE bodyType;                                 // 消息的类型
     std::string bodyFileName;                             // 要发送数据的路径
 
-
     std::string beforeBodyMsg;                            // 消息体之前的所有数据
     int beforeBodyMsgLen;                                 // 消息体之前的所有数据的长度
 
