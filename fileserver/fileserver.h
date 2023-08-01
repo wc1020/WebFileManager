@@ -47,7 +47,6 @@ private:
     static int eventHandlerPipe[2];   // 用于统一事件源传递信号的管道
 
     epoll_event resEvents[MAX_RESEVENT_SIZE]; // 保存 epoll_wait 结果的数组
-    
     ThreadPool *threadPool;
 };
 

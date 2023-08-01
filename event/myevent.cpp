@@ -387,7 +387,6 @@ void HandleSend::process(){
                 responseStatus[m_clientFd].curStatusHasSendLen = 0;   // 设置当前已发送的数据长度为0
 
                 std::cout << outHead("info") << "客户端 " << m_clientFd << " 的请求消息要下载文件 " << filename << " ，文件打开成功，根据文件构建响应消息状态行和头部信息成功" << std::endl;
-                
             }
 
         }else if(opera == "delete"){        // 删除文件
